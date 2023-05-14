@@ -1,5 +1,14 @@
-package week2.app.excercise.algebra;// This class was created by PaintableToast
+package week2.app.excercise.algebra;
 
+/**
+ * Rational Klasse
+ *
+ * Die Klasse intialisiert Numerator und Denominator
+ *
+ * @Author Ramon Cemil Kimyon
+ * @Universitöt Georg-August-Universität Göttingen
+ * @Modul Allgemeines Programmierpraktikum
+ */
 public class Rational extends BasisFraction{
     private long numerator, denominator;
     public Rational(double rational) {
@@ -58,7 +67,7 @@ public class Rational extends BasisFraction{
     }
     @Override
     public int hashCode() {
-        return Integer.valueOf( getN() + getD() + String.valueOf(getN()).length() + "");
+        return Integer.valueOf( (getN() + "") + (getD() + "") + String.valueOf(getN()).length() + "");
     }
     @Override
     public boolean equals(Object object) {

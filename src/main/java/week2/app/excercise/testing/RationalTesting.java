@@ -1,9 +1,18 @@
-package week2.app.testing.algebra;// This class was created by PaintableToast
+package week2.app.excercise.testing;
 
 import week2.app.excercise.algebra.Rational;
 
 import java.util.Scanner;
 
+/**
+ * RationalTesting
+ *
+ * Klasse zum Testen von Aufgabe 1
+ *
+ * @Author Ramon Cemil Kimyon
+ * @Universitöt Georg-August-Universität Göttingen
+ * @Modul Allgemeines Programmierpraktikum
+ */
 public class RationalTesting {
     public final static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -12,7 +21,9 @@ public class RationalTesting {
         Rational rational;
         for (int i = 0; i < duration; i++) {
             rational = new Rational(scanner.nextLong(), scanner.nextLong());
-            System.out.println("\ntoString():\n" + rational.toString());
+            System.out.println("\ntoString():");
+            System.out.println(rational.toString());
+
             System.out.println("\ngetN():\n" + rational.getN());
             System.out.println("\ngetD():\n" + rational.getD());
 
@@ -35,10 +46,10 @@ public class RationalTesting {
             rational.div(new Rational(scanner.nextLong(), scanner.nextLong()));
             System.out.println(rational.toString());
 
-            System.out.println("\nnegation:");
+            System.out.println("\nnegation():");
             System.out.println(rational.negation().toString());
 
-            System.out.println("\nreciprocal:");
+            System.out.println("\nreciprocal():");
             System.out.println(rational.reciprocal().toString());
 
             System.out.println("\nhashCode():");

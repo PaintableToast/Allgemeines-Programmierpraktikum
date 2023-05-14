@@ -1,7 +1,15 @@
-package week2.app.excercise.algebra;// This class was created by PaintableToast
+package week2.app.excercise.algebra;
 
+/**
+ * abstrakte Klasse BasisFraction
+ *
+ * Die abstrakte Klasse Basisfraction intialsiert, die arithmetischen Methoden des Fractional Interfaces. (Sie erbt von Fractional)
+ *
+ * @Author Ramon Cemil Kimyon
+ * @Universitöt Georg-August-Universität Göttingen
+ * @Modul Allgemeines Programmierpraktikum
+ */
 public abstract class BasisFraction extends Object implements Fractional{
-
     protected abstract void setND(long numerator, long denominator);
     public void add(Fractional operand) {
         setND(this.getN() * operand.getD() + operand.getN() * this.getD(), this.getD() * operand.getD());
