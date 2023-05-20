@@ -1,6 +1,6 @@
-package week2.app.excercise.testing;
+package app.excercise.testing;
 
-import week2.app.excercise.algebra.Rational;
+import app.excercise.algebra.Rational;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package week2.app.excercise.algebra;
+package app.excercise.algebra;
 
 /**
  * Fractional Interface
