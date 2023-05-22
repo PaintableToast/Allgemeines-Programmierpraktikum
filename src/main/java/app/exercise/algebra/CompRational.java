@@ -1,4 +1,4 @@
-package app.excercise.algebra;// This class was created by PaintableToast
+package app.exercise.algebra;// This class was created by PaintableToast
 
 public class CompRational extends Rational implements Comparable{
 

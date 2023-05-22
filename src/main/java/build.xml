@@ -1,0 +1,20 @@
+<project name="app_algebra" basedir="." default="JAVADOC">
+
+    <target name="init">
+        <mkdir dir="build"/>
+        <mkdir dir="javadoc"/>
+    </target>
+    <target name="compile" depends="clean,init">
+        <property  name="jarfile" location="RedBlackTreeDrawer.jar"/>
+        <property  name="java" location="."/>
+        <property  name="build" location="build"/>
+        <javac srcdir="${java}" destdir="${build}" classpath="${jarfile}"/>
+    </target>
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="javadoc"/>
+    </target>
+    <target name="JAVADOC" depends="compile">
+        <javadoc sourcepath="java" destdir="javadoc" author="true" version="true" private="true"/>
+    </target>
+</project>

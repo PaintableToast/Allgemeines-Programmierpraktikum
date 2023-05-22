@@ -1,4 +1,4 @@
-package app.excercise.algebra;
+package app.exercise.algebra;
 
 /**
  * Rational Klasse

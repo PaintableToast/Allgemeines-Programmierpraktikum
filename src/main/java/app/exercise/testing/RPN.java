@@ -1,6 +1,6 @@
-package app.excercise.testing;
+package app.exercise.testing;
 
-import app.excercise.algebra.Rational;
+import app.exercise.algebra.Rational;
 
 import java.util.Stack;
 
